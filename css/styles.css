@@ -636,7 +636,7 @@ a {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-
+  outline: none;
   border: 1px solid #ffffff;
   border-radius: 4px;
   width: 288px;
@@ -699,7 +699,7 @@ a {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pop-up.is-open {
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -878,19 +878,13 @@ textarea.user-modal {
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  fill: transparent;
-
+  fill: #ffffff;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-icon {
-  fill: #ffffff;
-}
-
-.user-tick:checked + .modal-label-ticker .check-icon,
-.user-tick:checked + .modal-label-ticker .checkbox-icon {
+.user-tick:checked + .modal-label .check-icon {
   border: none;
   border-color: #404bbf;
   background-color: #404bbf;
